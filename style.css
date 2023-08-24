@@ -46,6 +46,7 @@
 }
 
 header {
+    z-index: 1;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -62,11 +63,24 @@ header section {
     border-bottom: 2px solid #151515;
 }
 
-ul {
+header ul {
     display: flex;
     list-style: none;
     width: 36vw;
     justify-content: space-between;
+}
+
+header li {
+    padding: 4px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+header li:hover {
+    border-bottom: 2px solid white;
+}
+
+header li:focus {
+    border-bottom: 2px solid white;
 }
 
 a {
