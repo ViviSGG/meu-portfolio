@@ -2,6 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#whats {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    padding: 12px;
+    border: 1px solid var(--cyan-color);
+    border-radius: 50px;
+    z-index: 2;
+}
+
+#email {
+    position: fixed;
+    right: 40px;
+    bottom: 110px;
+    padding: 16px;
+    border: 1px solid var(--cyan-color);
+    border-radius: 50px;
+    z-index: 2;
 }
 
 :root {
@@ -88,6 +109,10 @@ a {
     text-decoration: none;
 }
 
+.box1 a, .box2 a {
+    width: 160px;
+}
+
 .container-box1 {
     display: flex;
     height: 100vh;
@@ -120,7 +145,7 @@ a {
 .container-box2 {
     display: flex;
     justify-content: center;
-    padding: 10vh 0;
+    padding: 12vh 0;
 }
 
 .box2 {
@@ -141,10 +166,14 @@ a {
     border-left: 5px solid var(--cyan-color);
 }
 
+.box3 a {
+    width: 180px;
+}
+
 .container-box3 {
     display: flex;
     justify-content: center;
-    padding: 10vh 0;
+    padding: 12vh 0;
 }
 
 .box3 {
@@ -196,4 +225,77 @@ footer {
     height: 10vh;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 1000px) {
+    header ul {
+        width: 48vw;
+    }
+}
+
+@media (max-width: 706px) {
+    .no-mobile {
+        display: none;
+    }
+
+    #whats {
+        right: 26px;
+        bottom: 40px;
+        padding: 12px;
+    }
+    
+    #email {
+        right: 26px;
+        bottom: 110px;
+        padding: 16px;
+    }
+
+    .box1 a, .box2 a {
+        width: 144px;
+    }
+
+    .container-box1 {
+        height: 60vh;
+    }
+
+    .box1 {
+        position: relative;
+        top: 20px;
+        background-image: none;
+    }
+
+    .box2 {
+        flex-wrap: wrap;
+        text-align: justify;
+    }
+
+    .cards-videos {
+        margin-bottom: 0!important;
+    }
+
+    .div-box2 {
+        margin-top: 4vh;
+        gap: 8px;
+    }
+
+    .box3 a {
+        width: 100%;
+    }
+
+    .cards-videos, .cards-imagens {
+        flex-wrap: wrap;
+    }
+
+    .card-video {
+        border: none;
+        width: 84vw;
+        margin-bottom: 1.5rem;
+    }
+    
+    .card-img {
+        width: 84vw;
+        margin-bottom: 26px;
+    }
+
+    
 }
