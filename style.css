@@ -233,6 +233,11 @@ figcaption {
     width: 84vw;
 }
 
+.box4 div {
+    width: 100%;
+    border-bottom: 2px solid var(--cyan-color);
+}
+
 footer {
     display: flex;
     height: 10vh;
@@ -245,8 +250,8 @@ footer {
         width: 48vw;
     }
 
-    .box3 a {
-        width: 100%;
+    .container-box1 {
+        height: 80vh;
     }
 
     .box2 {
@@ -261,6 +266,10 @@ footer {
     .div-box2 {
         margin-top: 4vh;
         gap: 8px;
+    }
+
+    .box3 a {
+        width: 100%;
     }
 }
 
