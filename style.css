@@ -167,7 +167,7 @@ a {
 }
 
 .box3 a {
-    width: 180px;
+    width: 48%;
 }
 
 .container-box3 {
@@ -181,6 +181,11 @@ a {
     flex-direction: column;
     align-items: start;
     width: 84vw;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
 }
 
 .card {
@@ -272,6 +277,13 @@ footer {
 
     .box3 a {
         width: 100%;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 2vh;
     }
 }
 
