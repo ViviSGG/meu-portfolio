@@ -161,7 +161,6 @@ a {
 }
 
 .perfil {
-    height: 300px;
     width: 300px;
     border-left: 5px solid var(--cyan-color);
 }
@@ -183,7 +182,7 @@ a {
     width: 84vw;
 }
 
-.buttons {
+.box3 .buttons {
     display: flex;
     justify-content: space-between;
 }
@@ -254,7 +253,7 @@ footer {
 
 @media (max-width: 950px) {
     header ul {
-        width: 48vw;
+        width: 50vw;
     }
 
     .container-box1 {
@@ -279,7 +278,7 @@ footer {
         width: 100%;
     }
 
-    .buttons {
+    .box3 .buttons {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -317,6 +316,20 @@ footer {
         position: relative;
         top: 20px;
         background-image: none;
+    }
+
+    .perfil {
+        width: 84vw;
+    }
+
+    .box1 .buttons, .box2 .buttons {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .box1 a, .box2 a {
+        width: 48%;
     }
 
     .cards-videos, .cards-imagens {
