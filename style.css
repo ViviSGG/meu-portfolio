@@ -195,13 +195,13 @@ a {
     border-left: 5px solid var(--cyan-color);
 }
 
-.cards-videos {
+.cards-big {
     display: flex;
     width: 84vw;
     justify-content: space-between;
 }
 
-.card-video {
+.card-big {
     border: none;
     width: 40vw;
 }
@@ -214,6 +214,7 @@ figcaption {
     display: flex;
     width: 84vw;
     justify-content: space-between;
+    margin-bottom: 4vh;
 }
 
 .card-img {
@@ -225,6 +226,10 @@ figcaption {
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--cinza-claro-color);
+}
+
+.habilidades img {
+    height: 40px;
 }
 
 .container-box4 {
@@ -268,7 +273,7 @@ footer {
         text-align: justify;
     }
 
-    .cards-videos {
+    .cards-big {
         margin-bottom: 0!important;
     }
 
@@ -335,11 +340,11 @@ footer {
         width: 48%;
     }
 
-    .cards-videos, .cards-imagens {
+    .cards-big, .cards-imagens {
         flex-wrap: wrap;
     }
 
-    .card-video {
+    .card-big {
         border: none;
         width: 84vw;
         margin-bottom: 1.5rem;
